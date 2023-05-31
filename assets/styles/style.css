@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,600;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #7B2869;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*********utils**********/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-side{
+    flex: 0.3;
+    margin-right: 16px;
+}
+.right-side{
+    flex: 0.7;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
+    padding-top: 80px;
+}
+
+.op-title{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+
+.card{
+ flex: 20%;
+ background-color: #C85C8E;
+ margin: 16px 8px;
+ border-radius: 16px;
+}
+
+.card-img{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;  
+}
+
+.card-title{
+    color: white;
+    width: 100%;
+    text-align: center;  
+    padding: 8px;
+    font-weight: 800;
+}
+
+.tag{
+    background-color: #C85C8E;
+    margin: 8px 8px 8px 0;
+    padding: 8px;
+    border-radius: 8px;
+}
+.title{
+    font-size: 24px;
+    color: white;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.mt-32{
+    margin-top: 32px;
+}
+/********* nav **********/
+nav{
+    background-color: #C85C8E;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 16px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav >h2{
+    color: white;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+nav > ul{
+    display: flex;
+    color: #FFBABA;
+    
+}
+nav > ul > li{
+    margin-left: 16px;
+    font-size: 18px;
+}

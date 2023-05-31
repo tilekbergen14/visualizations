@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupie tracker</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+</head>
+<body>
+    <nav>
+        <h2>Groupies</h2>
+        <ul>
+            <li>Home</li>
+            <li>Info</li>
+        </ul>
+    </nav>
+    <div class="container">
+   <div class="flex mt-32">
+    <div class="left-side">
+        <img class="card-img" src="{{.Artist.Image}}" alt="image">
+        <h1 class="op-title">{{.Artist.Name}}</h1>
+    </div>
+    <div class="right-side">
+        <h3 class="title">Members</h3>
+        <div class="flex">
+                {{range .Artist.Members}}
+            <div class="tag">
+                {{.}}
+            </div>
+            {{end}}
+        </div>
+        <h3 class="title">First Album</h3>
+        <div class="flex">
+            <div class="tag">
+                {{.Artist.FirstAlbum}}
+            </div>
+        </div>
+        <h3 class="title">Dates for concerts</h3>
+        <div class="flex">
+                {{range .Date.Dates}}
+            <div class="tag">
+                {{.}}
+            </div>
+            {{end}}
+        </div>
+        <h3 class="title">Locations</h3>
+
+        <div class="flex">
+                {{range .Location.Locations}}
+            <div class="tag">
+                {{.}}
+            </div>
+            {{end}}
+        </div>
+       
+    </div>
+    <!-- {{range .}}
+    <div class="card">
+        <a href="/artist/{{.Id}}">
+            <img class="card-img" src="{{.Image}}" alt="image">
+            <p class="card-title">{{.Name}}</p>
+        </a>
+    </div>
+{{end}} -->
+   </div>
+    </div>
+</body>
+</html>

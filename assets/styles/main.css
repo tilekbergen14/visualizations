@@ -18,6 +18,10 @@ ul{
     list-style: none;
 }
 /*********utils**********/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +57,8 @@ ul{
 .card-img{
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    width: 100%;  
+    width: 100%; 
+    aspect-ratio: 1/1; 
 }
 
 .card-title{
@@ -107,3 +112,24 @@ nav > ul > li{
     margin-left: 16px;
     font-size: 18px;
 }
+.artist-page{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .grid{
+        grid-template-columns: repeat(2, 50%);
+    }
+    /* .left-side{
+        flex: 1;
+        margin-right: 16px;
+    }
+    .right-side{
+        flex: 1;
+    } */
+    .artist-page{
+        grid-template-columns: 100%;
+    }
+  }

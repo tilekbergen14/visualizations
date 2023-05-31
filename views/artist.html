@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groupie tracker</title>
-    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
 </head>
 <body>
     <nav>
         <h2>Groupies</h2>
         <ul>
-            <li>Home</li>
-            <li>Info</li>
+            <a href="/"><li>Home</li></a>
         </ul>
     </nav>
     <div class="container">
-   <div class="flex mt-32">
+   <div class="flex artist-page mt-32">
     <div class="left-side">
         <img class="card-img" src="{{.Artist.Image}}" alt="image">
         <h1 class="op-title">{{.Artist.Name}}</h1>
